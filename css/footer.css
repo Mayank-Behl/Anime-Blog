@@ -1,0 +1,19 @@
+#footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    
+}
+#footer h3{
+    margin: 5px;
+}
+#footer a{
+    padding: 5px;
+    color: brown;
+    font-size: 20px;
+    text-decoration: underline;
+}

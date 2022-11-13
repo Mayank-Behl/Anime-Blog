@@ -1,0 +1,146 @@
+@import "nav.css";
+@import "footer.css";
+@import "general.css";
+
+*{
+    margin: 0;
+    padding: 0px;
+}
+.container{
+    display: grid;
+    grid-template-areas:
+    "navbar navbar" 
+    "card-img1 card-info1"
+    "card-info2 card-img2"
+    "footer footer";
+    grid-template-columns: repeat(1fr,2);
+    grid-template-rows: repeat(1fr,2) ;
+    grid-gap: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 241, 219);
+    overflow: hidden;
+} 
+
+
+
+
+#card-img1{
+    grid-area: card-img1;
+    margin: 5px;
+}
+
+img{
+    width: 100%;
+    height: 50vh;
+}
+
+#card-info1{
+    grid-area: card-info1;
+    background-color: antiquewhite;
+    background-color: rgb(249, 227, 227);
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border: 5px solid wheat;
+}
+
+#card-info1 h3,h4,p,a{
+    padding: 5px;
+}
+
+#card-info1 h3{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+#card-info1 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+#card-info1 p{
+    text-align: justify;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bolder;
+}
+
+#card-img2{
+    grid-area: card-img2;
+    margin: 5px;
+}
+#card-info2{
+    grid-area: card-info2;
+    background-color: antiquewhite;
+    background-color: rgb(249, 227, 227);
+    align-items: center;
+    justify-content: center;
+    border: 5px solid wheat;
+    margin: 5px;
+}
+#card-info2 h3,h4,p,a{
+    padding: 5px;
+}
+
+#card-info2 h3{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-decoration: underline;
+    
+}
+
+#card-info2 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+#card-info2 p{
+    text-align: justify;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bolder;
+}
+
+.read-more{
+    display: block;
+    background-color: rgb(217, 67, 67);
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.read-more a{
+    text-decoration: none;
+    color: wheat;
+    font-family: sans-serif;
+    font-size: medium;
+}
+
+.main-name{
+    text-decoration: underline;
+    color: palevioletred;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+
+@media (max-width: 800px){
+    .container{
+        display: grid;
+        grid-template-areas:
+        "navbar navbar" 
+        "card-img1 card-img1"
+        "card-info1 card-info1"
+        "card-img2 card-img2"
+        "card-info2 card-info2"
+        "footer footer";
+        grid-template-columns: repeat(1fr,2);
+        grid-template-rows: repeat(1fr,2) ;
+        grid-gap: 20px;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(240, 241, 219);
+    }
+}

@@ -1,0 +1,104 @@
+@import "nav.css";
+@import "footer.css";
+@import "general.css";
+*{
+    margin: 0;
+    padding: 0px;
+    
+}
+.character-container{
+    display: grid;
+    grid-template-areas:
+    "navbar navbar" 
+    "character-naruto character-luffy"
+    "anime-culture anime-culture"
+    "footer footer";
+    grid-template-columns: repeat(1fr,2);
+    grid-template-rows: repeat(1fr,2) ;
+    grid-gap: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 241, 219);
+    overflow: hidden;
+
+} 
+
+
+#character-naruto{
+    grid-area: character-naruto;
+    border: solid 5px wheat;
+}
+
+#character-luffy{
+    grid-area: character-luffy;
+    border: solid 5px wheat;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 5px;
+    text-decoration: underline;
+}
+
+p{
+    margin: 5px;
+    line-height: 1.5rem;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+
+img{
+    width: 100%;
+    height: 50vh;
+    border: solid 5px wheat;
+}
+
+#anime-culture{
+    grid-area: anime-culture;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-family: sans-serif;
+    border: solid 5px wheat;
+}
+
+#anime-culture h3{
+    text-decoration: underline;
+    font-weight: 900;
+    font-family: monospace;
+    font-size: x-large;
+    color: rgb(161, 41, 247);
+}
+
+
+span{
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bolder;
+    color: brown;
+}
+
+
+@media (max-width: 800px){
+    .character-container{
+        display: grid;
+        grid-template-areas:
+        "navbar navbar" 
+        "character-naruto character-naruto"
+        "character-luffy character-luffy"
+        "anime-culture anime-culture"
+        "footer footer";
+        grid-template-columns: repeat(1fr,2);
+        grid-template-rows: repeat(1fr,2) ;
+        grid-gap: 20px;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(240, 241, 219);
+    }
+}
