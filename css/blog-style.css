@@ -85,7 +85,7 @@ span{
 }
 
 
-@media (max-width: 800px){
+@media (max-width: 1025px){
     .character-container{
         display: grid;
         grid-template-areas:
